@@ -17,7 +17,7 @@
 __author__ = 'Joaquin Moreno Garijo (bastionado@gmail.com)'
 
 # README:
-# # The goal of this tools is only for developing pourpose.
+# The goal of this tools is only for developing purpose.
 # The full documented and well implemented version is going to be in PLASO:
 # https://code.google.com/p/plaso/
 # http://plaso.kiddaland.net/
