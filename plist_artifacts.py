@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""Cups Reading Control Files."""
+"""Mac OS X Artifacts."""
 
 # MSc Project in Royal Holloway, University of London.
 __author__ = 'Joaquin Moreno Garijo (bastionado@gmail.com)'
