@@ -17,7 +17,7 @@ __author__ = 'Joaquin Moreno Garijo (bastionado@gmail.com)'
 
 import sys
 
-magic='7d895223d2bcddeaa3b91f'
+magic_static='7d895223d2bcddeaa3b91f'
 pwd = ''
 
 if len(sys.argv) != 2:
@@ -27,7 +27,15 @@ if len(sys.argv) != 2:
 
 kcpasswd=sys.argv[1]
 print u'\n\tKcpasswd: 0x{}.'.format(kcpasswd)
-print u'\tMagic Xor: 0x{}.'.format(magic)
+print u'\tMagic Xor: 0x{}.'.format(magic_static)
+
+tam_xor = len(magic_static)
+tam = len(kcpasswd) - tam_xor
+magic = magic_static
+while tam > 0:
+  tam -= tam_xor
+  magic += magic_static
+print u'\tUsed Magic Xor: 0x{}.'.format(magic)
 
 i = 0
 while i < len(kcpasswd):
@@ -38,6 +46,6 @@ while i < len(kcpasswd):
   r = charkch ^ charmh
   pwd += chr(r)
   if r == 0:
-    print '\tThe password is: "{}".\n'.format(pwd)
+    print '\n\tThe password is: "{}".\n'.format(pwd)
     break
   i += 2
