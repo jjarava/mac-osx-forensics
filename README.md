@@ -1,5 +1,15 @@
-Python scripts to check some Mac OS X files. <br>
+# mac-osx-forensics
+Automatically exported from code.google.com/p/mac-osx-forensics
 
+Mac OS X Forensics tools cloned from https://code.google.com/p/mac-osx-forensics on January 12th, 2016
+
+By jjarava
+
+Original project "Readme.md" (or home page info) follows:
+
+---
+
+Python scripts to check some Mac OS X files. <br>
 
 
 <ul><li><b>asl.py</b>: Apple System Log parsers (/private/var/log/asl).<br>
